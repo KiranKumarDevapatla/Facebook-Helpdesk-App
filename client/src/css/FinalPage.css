@@ -1,0 +1,388 @@
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 4vw; /* Adjust width as needed */
+  background-color: #0866ff; /* Adjust color as needed */
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-tabs {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-tabs li {
+  border-bottom: 1px solid #ddd;
+}
+
+.nav-tabs li a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #333;
+}
+
+.nav-tabs li a:hover {
+  background-color: #eee;
+}
+
+.nav-tabs li a:hover svg {
+  fill: #0866ff;
+}
+
+.active-nav {
+  background-color: #eee;
+}
+
+.active-nav svg {
+  fill: #0866ff;
+}
+
+.tab-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.profile-container {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.profile-image {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.profile-image img {
+  width: 40px; /* Adjust as needed */
+  height: 40px; /* Adjust as needed */
+  border-radius: 50%; /* Make the image circular */
+}
+
+.status-dot {
+  width: 10px;
+  height: 10px;
+  background-color: green; /* Green dot */
+  border-radius: 50%; /* Make the dot circular */
+  position: absolute;
+  bottom: 2px; /* Adjust the position of the dot */
+  right: 2px;
+}
+
+/* Header Styles */
+.secondComponent {
+  margin-left: 4vw;
+  width: 20vw;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #fff;
+  color: #000;
+}
+
+.left-content {
+  display: flex;
+  align-items: center;
+}
+
+.menu-icon,
+.refresh-icon {
+  width: 20px;
+  height: 20px;
+  vertical-align:text-bottom;
+}
+
+.conversation {
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+/* Content Styles */
+.content {
+  padding: 20px;
+}
+
+.content:hover {
+  background-color: #CFD1D5;
+  cursor: pointer;
+}
+
+.active {
+  background-color: #CFD1D5;
+}
+
+.divider {
+  border-bottom: 1px solid #CFD1D5; /* Adjust thickness and color as needed */
+  height: 0; /* Adjust height as needed */
+  margin: 0; /* Adjust margin as needed */
+  width: 100%;
+}
+
+.checkbox-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+#checkbox {
+  width: 1.1vw;
+}
+
+.checkbox {
+  display: flex;
+  flex-direction: row;
+}
+
+.label {
+  margin-left: 10px !important;
+}
+
+.name {
+  font-size: 16px;
+}
+
+.type {
+  font-size: 14px;
+}
+
+.heading {
+  margin-top: 11px;
+  margin-bottom: 5px;
+}
+
+.thirdComponent {
+  width: 56vw;
+  height: 100vh;
+  border-left: 1px solid #CFD1D5;
+  border-right: 1px solid #CFD1D5;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+}
+
+/* Chat Heading Styles */
+.chat-heading {
+  text-align: left;
+  font-size: 20px;
+  flex: 0 0 auto;
+}
+
+.chats {
+  flex-grow: 1;
+  overflow-y: scroll;
+  margin-bottom: 0px;
+  background-color: rgb(240, 240, 240);
+}
+
+.input-area {
+  padding-top: 50px;
+  flex: 0 0 auto;
+  background-color: rgb(240, 240, 240);
+  width: 100%;
+}
+
+.chat {
+  display: flex;
+  align-items: center;
+  margin: 10px auto;
+}
+
+/* Circular image styles */
+.avatar {
+  width: 40px; /* Adjust size as needed */
+  height: 40px; /* Adjust size as needed */
+  border-radius: 50%; /* Circular shape */
+  margin: 10px;
+  overflow: hidden; /* Ensure circular shape */
+}
+
+.avatar img {
+  width: 100%; /* Ensure image fills the circular shape */
+  height: 100%; /* Maintain aspect ratio */
+}
+
+.text-box {
+  /* flex: 1; Take up remaining space */
+  background-color: #f9f9f9; /* Background color for text box */
+  padding: 10px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  max-width: 60%;
+}
+
+/* Text styles */
+.text {
+  margin: 0;
+  font-size: 16px;
+  color: #333;
+  word-break: break-all;
+}
+
+.my_chat .chat {
+  flex-direction: row-reverse;
+  align-items: flex-end;
+}
+
+.hide_avatar .chat .avatar {
+  visibility: hidden;
+}
+
+.name_time {
+  font-size: 14px;
+  color: #666;
+  margin-left: 60px;
+}
+
+.my_chat .name_time {
+  margin-right: 60px;
+  text-align: end !important;
+}
+
+#input-area {
+  position: absolute; /* Position the text box absolutely */
+  bottom: 10px; /* Align to the bottom of the container */
+  width: 90%; /* Take the full width of the container */
+  height: 30px; /* Set the height of the text box */
+  margin-left: 5%;
+  margin-top: 20px;
+}
+
+.fourthComponent {
+  width: 20vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-container1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+  height: 36vh; /* Set the height of the container */
+  flex: 0 0 auto;
+  width: 100%;
+
+}
+
+.profile-avatar {
+  width: 100px; /* Set the width of the avatar */
+  height: 100px; /* Set the height of the avatar */
+  border-radius: 50%; /* Make the avatar circular */
+}
+
+.profile-name {
+  margin-top: 10px;
+  font-size: 21px;
+}
+
+.full-profile-status {
+  display: flex;
+  flex-direction: row;
+  padding: auto;
+}
+
+.profile-status {
+  font-size: 14px;
+  color: #666;
+}
+
+.profile-status-dot-online {
+  width: 10px;
+  height: 10px;
+  background-color: green; /* Green dot */
+  border-radius: 50%;
+  margin: 3px;
+  margin-top: 5px;
+}
+
+.profile-status-dot-offline {
+  width: 10px;
+  height: 10px;
+  background-color: gray; /* Green dot */
+  border-radius: 50%;
+  margin: 3px;
+  margin-top: 5px;
+}
+
+.profile-buttons {
+  display: flex;
+  flex-direction: row;
+}
+
+.call-button, .profile-button {
+  margin: 10px 5px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+}
+
+.call-icon {
+  transform: rotate(-45deg);
+}
+
+.call-icon, .profile-icon {
+  margin-right: 3px;
+}
+
+.profile-details {
+  background-color: #c7d2dd;
+  flex-grow: 1;
+}
+
+.details-box {
+  background-color: white;
+  padding: 5px;
+  border-radius: 8px;
+  margin: 15px;
+}
+
+.details-header {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  margin: auto 10px;
+}
+
+.detail {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+.detail-heading {
+  color: #666;
+}
+
+.more-details {
+  text-decoration: none;
+  font-size: 15px;
+  color: #3671d1;
+  font-weight: 600;
+  margin: 10px 0;
+}

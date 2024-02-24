@@ -1,0 +1,32 @@
+.home-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #3b5998; /* Facebook Blue */
+    color: #fff;
+  }
+  
+  .navbar {
+    background-color: #4267b2; /* Facebook Navbar Blue */
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .welcome-message {
+    text-align: center;
+  }
+  
+  .welcome-line1 {
+    font-size: 24px;
+    color: #fff; /* White */
+  }
+  
+  .welcome-line2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #00a400; /* Facebook Green */
+  }
+  
