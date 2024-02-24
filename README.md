@@ -8,8 +8,14 @@ Facebook Helpdesk App is an innovative business page management application desi
 
 ### Technologies Used
 • **Express.Js**:: A web application framework for building APIs and handling server-side logic.
+
+
 •	**Node.js**: A runtime environment for executing JavaScript code on the server.
+
+
 •	**MongoDB**: A database for storing the log in and sign up records.
+
+
 •	**ReactJS**: A javascript based frontend framework with many in built libraries
 
 ### Key Features
